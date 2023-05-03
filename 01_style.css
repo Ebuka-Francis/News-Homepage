@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;600&family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* padding-top: 30px; */
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "inter", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+.gcontainer {
+  display: flex;
+flex-direction: row;
+
+}
+.header {
+  background-color: #fff;
+  color: #000;
+  font: size 2em;
+  text-align: center;
+  padding: 20px;
+  text-transform: capitalize;
+  padding-bottom: 50px;
+}
+.header2 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.hydrogen {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.af {
+  padding: 30px;
+}
+.info {
+  display: flex;
+  gap: 20px;
+}
+.formation {
+  padding: 20px;
+}
+
