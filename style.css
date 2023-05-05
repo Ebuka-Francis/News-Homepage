@@ -11,12 +11,11 @@ body {
   color: #000;
   font-family: "inter", sans-serif;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 .general {
-  height: 100vh;
   margin-inline: auto;
+  max-width: 757px;
 }
 
 .top {
@@ -42,12 +41,11 @@ a:hover {
 .container {
   display: grid;
   grid-template-areas:
-    "webdesk webdesk new"
-    "bold text new";
-  grid-auto-rows: 14rem;
-  grid-auto-columns: 21rem;
+    " webdesk webdesk new"
+    "bold text new ";
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
   gap: 2rem;
-  padding-top: 20px;
 }
 .menu {
   display: none;
@@ -73,7 +71,6 @@ a:hover {
   grid-area: bold;
 }
 .text {
- 
   font-size: 15px;
   grid-area: text;
   display: flex;
@@ -85,8 +82,6 @@ a:hover {
   padding: 3px;
   background-color: hsl(5, 85%, 63%);
   color: #fff;
-  width: 200px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +92,8 @@ a:hover {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding: 30px;
+  gap: 20px;
+  padding: 26px;
 }
 .inner {
   display: flex;
@@ -118,46 +113,13 @@ a:hover {
 }
 .designs {
   display: flex;
-  flex-wrap: wrap;
-  
+  padding-top: 20px;
 }
 p {
   color: hsl(300, 8%, 70%);
   font-size: 13px;
 }
-@media screen and (max-width: 1075px) {
-  .top {
-    justify-content: space-evenly;
-  }
 
-  .container {
-    display: grid;
-    grid-template-areas:
-      "webdesk webdesk"
-      "new text"
-      "new bold";
-    grid-auto-rows: 18rem;
-    grid-auto-columns: 31rem;
-  }
-}
-@media screen and (max-width: 940px) {
-  .container {
-    grid-auto-rows: 14rem;
-    grid-auto-columns: 23rem;
-  }
-}
-@media screen and (max-width: 730px) {
-  .container {
-    grid-auto-rows: 18rem;
-    grid-auto-columns: 19rem;
-  }
-}
-@media screen and (max-width: 540px) {
-  /* .container {
-    grid-auto-rows: 17rem;
-    grid-auto-columns: 16rem;
-  } */
-}
 @media screen and (max-width: 500px) {
   .top {
     display: flex;
@@ -169,23 +131,11 @@ p {
   .menu {
     display: block;
   }
-  /* .container {
-    grid-auto-rows: 19rem;
-    grid-auto-columns: 12rem;
-  } */
-  #webdesk {
-    display: none;
+  .designs {
+    flex-direction: column;
+    padding-top: 230px;
   }
-}
-@media screen and (max-width: 400px) {
-  #webdesk {
-    display: none;
-  }
-  #mobiledesk {
-    height: 100%;
-    width: 100%;
-    display: block;
-  }
+
   .container {
     display: grid;
     grid-template-areas:
@@ -193,38 +143,14 @@ p {
       "bold"
       "text"
       "new";
-    /* grid-auto-rows: 13rem;
-    grid-auto-columns: 21rem;
-    gap: 0; */
-  }
-  .top {
-    padding-top: 0;
-  }
-  .new {
-    height: 450px;
-  }
-  .designs {
-    padding-top: 279px;
-  }
-  .new {
-    gap: 35px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .top {
-    padding-top: 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    grid-auto-columns: 316px;
+    grid-auto-columns: 1fr;
     grid-auto-rows: 200px 190px 149px 170px;
     gap: 0;
   }
   .new {
     gap: 39px;
     padding: 24px;
+    height: 411px;
   }
   .general {
     width: min(110% - 9vw, 1110px);
@@ -238,10 +164,10 @@ p {
     width: 100%;
     display: block;
   }
+  #webdesk {
+    display: none;
+  }
   .top {
     display: flex;
-  }
-  body {
-    box-sizing: border-box;
   }
 }
